@@ -1,37 +1,41 @@
-import { StyleSheet, Text, View, Scrollview, ScrollView, Image } from 'react-native';
+import { StyleSheet, Text, View, ScrollView, Image, TouchableOpacity, ImageBackground } from 'react-native';
+0
 
 export default function App() {
   return (
     <ScrollView>
-        <View style={styles.header}>
-            <Text style={styles.headerText}>Chocotônya</Text>
-        </View>
+       <View style={styles.container}>
 
-        <View style={styles.container}>
+        <ImageBackground
+          source={require('./assets/melting-chocolate-bar-png-melted-chocolate-png-image-2403.png')}
+          style={styles.image}
+        >
+          <Text style={styles.headerText}>Chocôtonya</Text>
+        </ImageBackground>
 
             <View style={styles.box}>
-                <Text>Chocotônya</Text>
-                <Image source={require('./assets/download.jpeg')} style={styles.img}/>
+                <Image source={require('./assets/download-fotor-bg-remover-20240222151619.png')} style={styles.img}/>
+                <Text style={styles.imgText}>Bombons Garoto</Text>
             </View>
 
             <View style={styles.box}>
-                <Text>Chocotônya</Text>
-                <Image source={require('./assets/download.jpeg')} style={styles.img}/>
+                <Image source={require('./assets/download-fotor-bg-remover-20240222151619.png')} style={styles.img}/>
+                <Text style={styles.imgText}>Chocotônya</Text>
             </View>
 
             <View style={styles.box}>
-                <Text>Chocotônya</Text>
-                <Image source={require('./assets/download.jpeg')} style={styles.img}/>
+                <Image source={require('./assets/download-fotor-bg-remover-20240222151619.png')} style={styles.img}/>
+                <Text style={styles.imgText}>Chocotônya</Text>
             </View>
 
             <View style={styles.box}>
-                <Text>Chocotônya</Text>
-                <Image source={require('./assets/download.jpeg')} style={styles.img}/>
+                <Image source={require('./assets/download-fotor-bg-remover-20240222151619.png')} style={styles.img}/>
+                <Text style={styles.imgText}>Chocotônya</Text>
             </View>
 
             <View style={styles.box}>
-                <Text>Chocotônya</Text>
-                <Image source={require('./assets/download.jpeg')} style={styles.img}/>
+                <Image source={require('./assets/download-fotor-bg-remover-20240222151619.png')} style={styles.img}/>
+                <Text style={styles.imgText}>Chocotônya</Text>
             </View>
 
         </View>
@@ -40,46 +44,53 @@ export default function App() {
 }
 
 const styles = StyleSheet.create({
-  header: {
-    backgroundColor: '#000',
-    justifyContent: 'center',
-    alignItems: 'center',
-    textAlign: 'center',
-    position: 'relative',
-    width: '100%',
-    height: 100,
-    borderTopLeftRadius: 100, // Raio para o canto superior esquerdo
-    borderTopRightRadius: 5, // Raio para o canto superior direito
-    borderBottomLeftRadius: 10, // Raio para o canto inferior esquerdo
-    borderBottomRightRadius: 70, // Raio para o canto inferior direito
-    backgroundColor: 'rgba(255, 255, 255, .5)',
+  // header: {
+  //   // backgroundColor: '#724629',
+  //   justifyContent: 'center',
+  //   alignItems: 'center',
+  //   textAlign: 'center',
+  //   width: '100%',
+  //   height: 'auto',
+  //   // borderBottomLeftRadius: 100, // Raio para o canto inferior esquerdo
+  //   // borderBottomRightRadius: 100, // Raio para o canto inferior direito
 
-  },
+  // },
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: '#f5fffa',
     alignItems: 'center',
     justifyContent: 'center',
   },
   box: {
     flex: 1,
-    backgroundColor: '#000',
+    backgroundColor: '#724628',
     alignItems: 'center',
     justifyContent: 'center',
-    borderRadius: 35,
-    width: 350,
-    height: 350,
+    width: 300,
+    height: 300,
     marginBottom: 15,
-    marginTop: 30
+    marginTop: 30,
+    borderRadius: 180,
   },
   img: {
-    width: 250,
-    height: 250,
+    width: 185,
+    height: 185,
   },
   headerText: {
     color: 'white',
-    fontSize: 35,
+    fontSize: 30,
     fontWeight: 'bold',
+    fontStyle: 'italic'
+  },
+  imgText: {
+    fontSize: 18,
+    color: 'white',
+    flexWrap: 'wrap',
+  },
+  image: {
+    width: '100%',
+    height: 100,
+    alignItems: 'center',
+    justifyContent: 'center',
   }
 });
-
