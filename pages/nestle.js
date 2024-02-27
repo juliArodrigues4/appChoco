@@ -1,24 +1,24 @@
 import { StyleSheet, Text, ScrollView, Image, View, Dimensions } from "react-native";
 
-export default function Lacta(){
+export default function Nestle(){
     return(
         <ScrollView>
             <View style={styles.container}>
 
                 <Text style={styles.title}>
-                    Poema da Lacta
+                    Poema da Nestlê
                 </Text>
 
                     <Text style={styles.texto}>
-                        Com o aroma sedutor que nos envolve, {'\n'}
-                        Os chocolates da Lacta, paixão que se resolve. {'\n'}
-                        Do chocolate ao leite ao irresistível meio amargo, {'\n'}
-                        Cada mordida é um momento de puro afago.
+                        Com recheios sedutores que nos fazem suspirar, {'\n'}
+                        Os bonbons da Nestlé são motivo para celebrar. {'\n'}
+                        Do chocolate ao caramelo, uma sinfonia de prazer, {'\n'}
+                        Em cada momento, uma doce forma de viver.
                     </Text>
 
                     <View style={styles.gif}>
                         <Image style={{width: 250, height: 250}} resizeMode="contain"
-                        source={require('../assets/valentine-valentine-day.gif')}/>
+                        source={require('../assets/chocolate-bar.gif')}/>
                     </View>
                  
 
@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
         textAlign: 'left',
         color: '#000',
         paddingLeft: 10,
-        marginTop: 70,
+        marginTop: 50,
     },
     lacta: {
         width: 300,
@@ -64,7 +64,8 @@ const styles = StyleSheet.create({
         alignItems: 'center',
         justifyContent: 'center',
         alignContent: 'center',
-        padding: 8
+        padding: 8,
+        marginTop: 20,
     },
     title: {
         marginTop: 50,
@@ -72,10 +73,10 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         fontSize: 35,
         fontWeight: 'bold',
-        color: '#0000CD'
+        color: '#8B1A1A'
     },
     sub: {
-        marginTop: 110,
+        marginTop: 80,
         textAlignVertical: "bottom",
         textAlign: 'center',
         fontSize: 15,

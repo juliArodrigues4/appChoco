@@ -1,24 +1,24 @@
 import { StyleSheet, Text, ScrollView, Image, View, Dimensions } from "react-native";
 
-export default function Lacta(){
+export default function Garoto(){
     return(
         <ScrollView>
             <View style={styles.container}>
 
                 <Text style={styles.title}>
-                    Poema da Lacta
+                    Poema da Garoto
                 </Text>
 
                     <Text style={styles.texto}>
-                        Com o aroma sedutor que nos envolve, {'\n'}
-                        Os chocolates da Lacta, paixão que se resolve. {'\n'}
-                        Do chocolate ao leite ao irresistível meio amargo, {'\n'}
-                        Cada mordida é um momento de puro afago.
+                        Cobertos de chocolate, recheados de emoção, {'\n'}
+                        Cada mordida é uma nova sensação. {'\n'}
+                        Com delicadeza e arte, são feitos a sonhar, {'\n'}
+                        Os bonbons da Garoto, prazer a degustar. {'\n'}
                     </Text>
 
                     <View style={styles.gif}>
                         <Image style={{width: 250, height: 250}} resizeMode="contain"
-                        source={require('../assets/valentine-valentine-day.gif')}/>
+                        source={require('../assets/chocolate-bar-chocolate.gif')}/>
                     </View>
                  
 
@@ -49,7 +49,7 @@ const styles = StyleSheet.create({
         textAlign: 'left',
         color: '#000',
         paddingLeft: 10,
-        marginTop: 70,
+        marginTop: 50,
     },
     lacta: {
         width: 300,
@@ -72,10 +72,10 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         fontSize: 35,
         fontWeight: 'bold',
-        color: '#0000CD'
+        color: '#FFA500'
     },
     sub: {
-        marginTop: 110,
+        marginTop: 90,
         textAlignVertical: "bottom",
         textAlign: 'center',
         fontSize: 15,
